@@ -1,11 +1,15 @@
 <?php
 
+use App\Http\Controllers\CourceController;
+use App\Http\Controllers\lecturerController;
+use App\Http\Controllers\StudViewController;
 use App\Models\Post;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 use function PHPSTORM_META\map;
-
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\JointableController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +20,7 @@ use function PHPSTORM_META\map;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     //\Log::info(collect(File::files(resource_path("posts"))));
     return view('posts',[
@@ -33,3 +37,36 @@ Route::get('posts/{post}', function ($id) {
     ]);
 });
 
+//Route::get('\', function () {
+    //return view('main');
+//});
+
+Route::get('/test',function(){
+$posts=DB::select("select * from posts");
+foreach($posts as $post){
+echo $posts;
+}
+dd($posts);
+});
+
+
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+
+
+Route::get('/test',function(){
+$class=DB::table('classes')
+    ->select('name');
+dd($class->content);
+
+});
+*/
+
+Route::get('/test',[StudViewController::class, 'index'])->name('student');
+Route::get('/test1',[lecturerController::class, 'index'])->name('lecturer');
+Route::get('/test2',[CourceController::class, 'index'])->name('course');
+//Route::get('/click', 'click/HomeController@index');
+Route::get('/click',function(){
+    return view('click');
+});
+Route::get('/join_table', [JointableController::class, 'index'])->name('join_table');

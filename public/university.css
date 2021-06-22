@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(5, 2, 3, 0.1);
+
+}
+table {
+    width: 50%;
+    margin:auto;
+    border:solid 1px red;
+    margin-top: 20px;
+}
+td {
+    text-align: center;
+}
+.style{
+    padding-left: 15px;
+    padding-right: 15px;
+    width:100%;
+    background-color: rgba(231, 42, 70, 0.43);
+    cursor: pointer;
+}
+.style:hover {background-color: rgba(193, 245, 196, 0.45)
+}
+
+.style:active {
+    background-color: rgba(193, 245, 196, 0.45);
+    box-shadow: 0 2px #666;
+    transform: translateY(1px);
+}
