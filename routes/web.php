@@ -10,6 +10,7 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 use function PHPSTORM_META\map;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\JointableController;
+use App\Http\Controllers\classController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -70,3 +71,7 @@ Route::get('/click',function(){
     return view('click');
 });
 Route::get('/join_table', [JointableController::class, 'index'])->name('join_table');
+Route::get('/test3',[classController::class, 'index'])->name('classes');
+
+Route::get('/test/{id}',[StudViewController::class, 'show']);
+Route::post('/test/{id}',[StudViewController::class, 'edit']);

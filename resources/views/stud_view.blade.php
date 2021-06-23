@@ -12,6 +12,7 @@
         <td>First Name</td>
         <td>City Name</td>
         <td>Email</td>
+        <td>edit</td>
     </tr>
     @foreach ($users as $user)
         <tr>
@@ -19,8 +20,10 @@
             <td>{{ $user->name }}</td>
             <td>{{ $user->address }}</td>
             <td>{{ $user->email }}</td>
+            <td><a href = 'test/{{ $user->id }}'>Edit</a></td>
         </tr>
     @endforeach
 </table>
+
 </body>
 </html>

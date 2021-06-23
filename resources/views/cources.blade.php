@@ -10,7 +10,7 @@
     <tr>
         <td>Id</td>
         <td>First Name</td>
-        <td><button class="style">classes</button></td>
+        <td><a href="{{route('classes')}}"><button class="style">classes</button></a></td>
 
     </tr>
     @foreach ($users as $user)
