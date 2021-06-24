@@ -10,6 +10,7 @@
    <li><a href="{{route('student')}}"> <button type="button" class="button">students </button></a></li>
    <li><a href="{{route('join_table')}}"> <button type="button" class="button">lecturers </button></a> </li>
    <li><a href="{{route('course')}}"> <button type="button" class="button"> courses </button></a> </li>
+   <li><a href="{{route('insert')}}"> <button type="button" class="button"> ADD new student </button></a> </li>
     </ul>
 </div>
 

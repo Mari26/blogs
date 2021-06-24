@@ -78,5 +78,5 @@ Route::get('/test/{id}',[StudViewController::class, 'show']);
 Route::post('/test/{id}',[StudViewController::class, 'edit']);
 
 
-Route::get('insert',[StudInsertController::class, 'insertform']);
+Route::get('insert',[StudInsertController::class, 'store'])->name('insert');
 Route::post('create',[StudInsertController::class, 'insert']);

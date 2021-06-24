@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title>Student Add</title>
+    <title>Student Management | Add</title>
+    <link rel="stylesheet" href="{{asset('update.css')}}">
 </head>
 
 <body>
@@ -10,6 +11,7 @@
         <tr>
             <td>Name</td>
             <td><input type='text' name='stud_name' /></td>
+
         </tr>
         <tr>
             <td colspan = '2'>
@@ -20,4 +22,3 @@
 </form>
 
 </body>
-</html>
