@@ -24,4 +24,5 @@ class StudViewController extends Controller {
         echo "<p style='color:forestgreen ; text-align:center;font-size:45px;font-weight: bold'>"."Record updated successfully.<br/>"."</p>";
         //echo '<a href = "/click">go back</a>';
     }
+
 }

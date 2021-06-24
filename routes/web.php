@@ -11,6 +11,7 @@ use function PHPSTORM_META\map;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\JointableController;
 use App\Http\Controllers\classController;
+use App\Http\Controllers\StudInsertController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -75,3 +76,7 @@ Route::get('/test3',[classController::class, 'index'])->name('classes');
 
 Route::get('/test/{id}',[StudViewController::class, 'show']);
 Route::post('/test/{id}',[StudViewController::class, 'edit']);
+
+
+Route::get('insert',[StudInsertController::class, 'insertform']);
+Route::post('create',[StudInsertController::class, 'insert']);
