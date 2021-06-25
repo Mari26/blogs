@@ -515,6 +515,7 @@ class ComposerStaticInitab7f9b829e78d72d926dea422e8ec3a5
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\CourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/CourceController.php',
         'App\\Http\\Controllers\\JointableController' => __DIR__ . '/../..' . '/app/Http/Controllers/JointableController.php',
+        'App\\Http\\Controllers\\LecturinsertController' => __DIR__ . '/../..' . '/app/Http/Controllers/LecturinsertController.php',
         'App\\Http\\Controllers\\StudInsertController' => __DIR__ . '/../..' . '/app/Http/Controllers/StudInsertController.php',
         'App\\Http\\Controllers\\StudViewController' => __DIR__ . '/../..' . '/app/Http/Controllers/StudViewController.php',
         'App\\Http\\Controllers\\classController' => __DIR__ . '/../..' . '/app/Http/Controllers/classController.php',

@@ -11,6 +11,7 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\CourceController' => $baseDir . '/app/Http/Controllers/CourceController.php',
     'App\\Http\\Controllers\\JointableController' => $baseDir . '/app/Http/Controllers/JointableController.php',
+    'App\\Http\\Controllers\\LecturinsertController' => $baseDir . '/app/Http/Controllers/LecturinsertController.php',
     'App\\Http\\Controllers\\StudInsertController' => $baseDir . '/app/Http/Controllers/StudInsertController.php',
     'App\\Http\\Controllers\\StudViewController' => $baseDir . '/app/Http/Controllers/StudViewController.php',
     'App\\Http\\Controllers\\classController' => $baseDir . '/app/Http/Controllers/classController.php',

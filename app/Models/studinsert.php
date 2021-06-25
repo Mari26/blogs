@@ -10,4 +10,5 @@ class studinsert extends Model
     use HasFactory;
     protected $table = 'studentsinsert';
     protected $fillable = ['name'];
+
 }

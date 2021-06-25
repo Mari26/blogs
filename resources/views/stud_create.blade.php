@@ -13,6 +13,7 @@
             <td><input type='text' name='stud_name' /></td>
 
         </tr>
+
         <tr>
             <td colspan = '2'>
                 <input type = 'submit' value = "Add student"/>

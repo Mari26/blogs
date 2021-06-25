@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\JointableController;
 use App\Http\Controllers\classController;
 use App\Http\Controllers\StudInsertController;
+use App\Http\Controllers\LecturinsertController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -80,3 +81,6 @@ Route::post('/test/{id}',[StudViewController::class, 'edit']);
 
 Route::get('insert',[StudInsertController::class, 'store'])->name('insert');
 Route::post('create',[StudInsertController::class, 'insert']);
+
+Route::get('insert',[LecturinsertController::class, 'store'])->name('insert');
+Route::post('create',[LecturinsertController::class, 'insert']);
